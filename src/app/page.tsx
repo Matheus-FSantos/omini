@@ -4,7 +4,6 @@ import { Check, KeyRound } from "lucide-react";
 import { currentUser } from "@clerk/nextjs/server";
 import { SubscriptionButton } from "./components/payment/button/SubscriptionButton";
 import isValidSubscription from "@/service/is-valid-subscription";
-import { shipporiMincho } from "@/utils/fonts";
 
 export default async function Home() {
 	const user = await currentUser();
@@ -12,7 +11,7 @@ export default async function Home() {
   return (
     <div className="px-6">
       <div className="py-4 flex flex-row justify-between">
-				<span className={`font-bold cursor-default ${ shipporiMincho.className }`}>Omini</span>
+				<span className={`font-bold cursor-default`}>Omini</span>
 				<div className="flex flex-row items-center gap-4">
 					{
 						user &&

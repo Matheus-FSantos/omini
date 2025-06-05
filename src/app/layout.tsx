@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { shipporiMincho } from "@/utils/fonts";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
@@ -18,7 +17,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body
-          className={`${ shipporiMincho.variable } antialiased`}
+          className={`antialiased`}
         >
           <ThemeProvider
             attribute="class"

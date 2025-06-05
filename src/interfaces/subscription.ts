@@ -6,3 +6,9 @@ export interface Subscription {
 	created_at: Timestamp
 	expires_in: Timestamp
 }
+
+export interface NewSubscription {
+	client_email: string
+	created_at: Timestamp
+	expires_in: Timestamp
+}
